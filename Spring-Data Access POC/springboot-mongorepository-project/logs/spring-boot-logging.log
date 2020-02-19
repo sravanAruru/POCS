@@ -1,0 +1,637 @@
+2017-11-05 00:01:38.813  INFO 53191 --- [main] d.SpringDataAccessDemoProjectApplication : Starting SpringDataAccessDemoProjectApplication on NISUMs-MacBook-Pro.local with PID 53191 (started by nisum in /Users/nisum/Documents/Project files/Oct 18th/springboot-mongorepository-project)
+2017-11-05 00:01:38.816  INFO 53191 --- [main] d.SpringDataAccessDemoProjectApplication : No active profile set, falling back to default profiles: default
+2017-11-05 00:01:38.845  INFO 53191 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2aece37d: startup date [Sun Nov 05 00:01:38 IST 2017]; root of context hierarchy
+2017-11-05 00:01:39.175  INFO 53191 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-11-05 00:01:39.182 DEBUG 53191 --- [main] o.s.d.r.c.RepositoryComponentProvider    : Identified candidate component class: file [/Users/nisum/Documents/Project files/Oct 18th/springboot-mongorepository-project/target/classes/com/nisum/demo/dao/CustomerFinder.class]
+2017-11-05 00:01:39.189  INFO 53191 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.nisum.demo.dao.CustomerFinder.
+2017-11-05 00:01:39.211  INFO 53191 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-11-05 00:01:39.215 DEBUG 53191 --- [main] o.s.d.r.c.RepositoryComponentProvider    : Identified candidate component class: file [/Users/nisum/Documents/Project files/Oct 18th/springboot-mongorepository-project/target/classes/com/nisum/demo/dao/CustomerFinder.class]
+2017-11-05 00:01:39.218 DEBUG 53191 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Spring Data MongoDB - Registering repository: customerFinder - Interface: com.nisum.demo.dao.CustomerFinder - Factory: org.springframework.data.mongodb.repository.support.MongoRepositoryFactoryBean
+2017-11-05 00:01:39.699  INFO 53191 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 9090 (http)
+2017-11-05 00:01:39.706  INFO 53191 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-11-05 00:01:39.707  INFO 53191 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.20
+2017-11-05 00:01:39.836  INFO 53191 --- [localhost-startStop-1] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2017-11-05 00:01:39.839  INFO 53191 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-11-05 00:01:39.840  INFO 53191 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 997 ms
+2017-11-05 00:01:39.925  INFO 53191 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-11-05 00:01:39.928  INFO 53191 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-11-05 00:01:39.929  INFO 53191 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-11-05 00:01:39.929  INFO 53191 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-11-05 00:01:39.929  INFO 53191 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-11-05 00:01:39.960  WARN 53191 --- [main] ationConfigEmbeddedWebApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration': Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Tomcat.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.tomcat.jdbc.pool.DataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Cannot determine embedded database driver class for database type NONE. If you want an embedded database please put a supported one on the classpath. If you have database settings to be loaded from a particular profile you may need to active it (no profiles are currently active).
+2017-11-05 00:01:39.961  INFO 53191 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2017-11-05 00:01:39.974  INFO 53191 --- [main] utoConfigurationReportLoggingInitializer : 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2017-11-05 00:01:39.978 ERROR 53191 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Cannot determine embedded database driver class for database type NONE
+
+Action:
+
+If you want an embedded database please put a supported one on the classpath. If you have database settings to be loaded from a particular profile you may need to active it (no profiles are currently active).
+
+2017-11-05 00:04:29.134  INFO 53304 --- [main] d.SpringDataAccessDemoProjectApplication : Starting SpringDataAccessDemoProjectApplication on NISUMs-MacBook-Pro.local with PID 53304 (started by nisum in /Users/nisum/Documents/Project files/Oct 18th/springboot-mongorepository-project)
+2017-11-05 00:04:29.137  INFO 53304 --- [main] d.SpringDataAccessDemoProjectApplication : No active profile set, falling back to default profiles: default
+2017-11-05 00:04:29.166  INFO 53304 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2aece37d: startup date [Sun Nov 05 00:04:29 IST 2017]; root of context hierarchy
+2017-11-05 00:04:29.473  INFO 53304 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-11-05 00:04:29.479 DEBUG 53304 --- [main] o.s.d.r.c.RepositoryComponentProvider    : Identified candidate component class: file [/Users/nisum/Documents/Project files/Oct 18th/springboot-mongorepository-project/target/classes/com/nisum/demo/dao/CustomerFinder.class]
+2017-11-05 00:04:29.489 DEBUG 53304 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Spring Data MongoDB - Registering repository: customerFinder - Interface: com.nisum.demo.dao.CustomerFinder - Factory: org.springframework.data.mongodb.repository.support.MongoRepositoryFactoryBean
+2017-11-05 00:04:29.973  INFO 53304 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 9090 (http)
+2017-11-05 00:04:29.980  INFO 53304 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-11-05 00:04:29.981  INFO 53304 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.20
+2017-11-05 00:04:30.112  INFO 53304 --- [localhost-startStop-1] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2017-11-05 00:04:30.115  INFO 53304 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-11-05 00:04:30.116  INFO 53304 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 952 ms
+2017-11-05 00:04:30.197  INFO 53304 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-11-05 00:04:30.200  INFO 53304 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-11-05 00:04:30.200  INFO 53304 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-11-05 00:04:30.200  INFO 53304 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-11-05 00:04:30.200  INFO 53304 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-11-05 00:04:30.217  WARN 53304 --- [main] ationConfigEmbeddedWebApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration': Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'javax.sql.DataSource' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2017-11-05 00:04:30.218  INFO 53304 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2017-11-05 00:04:30.229  INFO 53304 --- [main] utoConfigurationReportLoggingInitializer : 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2017-11-05 00:04:30.276 ERROR 53304 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration required a bean of type 'javax.sql.DataSource' that could not be found.
+	- Bean method 'dataSource' not loaded because @ConditionalOnProperty (spring.datasource.jndi-name) did not find property 'jndi-name'
+	- Bean method 'dataSource' not loaded because @ConditionalOnBean (types: org.springframework.boot.jta.XADataSourceWrapper; SearchStrategy: all) did not find any beans
+
+
+Action:
+
+Consider revisiting the conditions above or defining a bean of type 'javax.sql.DataSource' in your configuration.
+
+2017-11-05 00:09:25.001  INFO 53499 --- [main] d.SpringDataAccessDemoProjectApplication : Starting SpringDataAccessDemoProjectApplication on NISUMs-MacBook-Pro.local with PID 53499 (started by nisum in /Users/nisum/Documents/Project files/Oct 18th/springboot-mongorepository-project)
+2017-11-05 00:09:25.005  INFO 53499 --- [main] d.SpringDataAccessDemoProjectApplication : No active profile set, falling back to default profiles: default
+2017-11-05 00:09:25.034  INFO 53499 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2aece37d: startup date [Sun Nov 05 00:09:25 IST 2017]; root of context hierarchy
+2017-11-05 00:09:25.351  INFO 53499 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-11-05 00:09:25.356 DEBUG 53499 --- [main] o.s.d.r.c.RepositoryComponentProvider    : Identified candidate component class: file [/Users/nisum/Documents/Project files/Oct 18th/springboot-mongorepository-project/target/classes/com/nisum/demo/dao/CustomerFinder.class]
+2017-11-05 00:09:25.367 DEBUG 53499 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Spring Data MongoDB - Registering repository: customerFinder - Interface: com.nisum.demo.dao.CustomerFinder - Factory: org.springframework.data.mongodb.repository.support.MongoRepositoryFactoryBean
+2017-11-05 00:09:25.843  INFO 53499 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 9090 (http)
+2017-11-05 00:09:25.850  INFO 53499 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-11-05 00:09:25.850  INFO 53499 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.20
+2017-11-05 00:09:25.982  INFO 53499 --- [localhost-startStop-1] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2017-11-05 00:09:25.985  INFO 53499 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-11-05 00:09:25.985  INFO 53499 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 953 ms
+2017-11-05 00:09:26.069  INFO 53499 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-11-05 00:09:26.072  INFO 53499 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-11-05 00:09:26.072  INFO 53499 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-11-05 00:09:26.072  INFO 53499 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-11-05 00:09:26.073  INFO 53499 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-11-05 00:09:26.089  WARN 53499 --- [main] ationConfigEmbeddedWebApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration': Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'javax.sql.DataSource' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2017-11-05 00:09:26.090  INFO 53499 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2017-11-05 00:09:26.101  INFO 53499 --- [main] utoConfigurationReportLoggingInitializer : 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2017-11-05 00:09:26.145 ERROR 53499 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration required a bean of type 'javax.sql.DataSource' that could not be found.
+	- Bean method 'dataSource' not loaded because @ConditionalOnProperty (spring.datasource.jndi-name) did not find property 'jndi-name'
+	- Bean method 'dataSource' not loaded because @ConditionalOnBean (types: org.springframework.boot.jta.XADataSourceWrapper; SearchStrategy: all) did not find any beans
+
+
+Action:
+
+Consider revisiting the conditions above or defining a bean of type 'javax.sql.DataSource' in your configuration.
+
+2017-11-05 00:10:00.470  INFO 53530 --- [main] ingDataAccessDemoProjectApplicationTests : Starting SpringDataAccessDemoProjectApplicationTests on NISUMs-MacBook-Pro.local with PID 53530 (started by nisum in /Users/nisum/Documents/Project files/Oct 18th/springboot-mongorepository-project)
+2017-11-05 00:10:00.471  INFO 53530 --- [main] ingDataAccessDemoProjectApplicationTests : No active profile set, falling back to default profiles: default
+2017-11-05 00:10:00.500  INFO 53530 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@3bf9ce3e: startup date [Sun Nov 05 00:10:00 IST 2017]; root of context hierarchy
+2017-11-05 00:10:00.926  INFO 53530 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-11-05 00:10:00.934 DEBUG 53530 --- [main] o.s.d.r.c.RepositoryComponentProvider    : Identified candidate component class: file [/Users/nisum/Documents/Project files/Oct 18th/springboot-mongorepository-project/target/classes/com/nisum/demo/dao/CustomerFinder.class]
+2017-11-05 00:10:00.947 DEBUG 53530 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Spring Data MongoDB - Registering repository: customerFinder - Interface: com.nisum.demo.dao.CustomerFinder - Factory: org.springframework.data.mongodb.repository.support.MongoRepositoryFactoryBean
+2017-11-05 00:10:01.305  WARN 53530 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration': Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'javax.sql.DataSource' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2017-11-05 00:10:01.311  INFO 53530 --- [main] utoConfigurationReportLoggingInitializer : 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2017-11-05 00:10:01.380 ERROR 53530 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration required a bean of type 'javax.sql.DataSource' that could not be found.
+	- Bean method 'dataSource' not loaded because @ConditionalOnProperty (spring.datasource.jndi-name) did not find property 'jndi-name'
+	- Bean method 'dataSource' not loaded because @ConditionalOnBean (types: org.springframework.boot.jta.XADataSourceWrapper; SearchStrategy: all) did not find any beans
+
+
+Action:
+
+Consider revisiting the conditions above or defining a bean of type 'javax.sql.DataSource' in your configuration.
+
+2017-11-05 00:10:01.387 ERROR 53530 --- [main] o.s.test.context.TestContextManager      : Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@400cff1a] to prepare test instance [com.nisum.demo.SpringDataAccessDemoProjectApplicationTests@22d6cac2]
+
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124) ~[spring-test-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:83) ~[spring-test-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:189) ~[spring-test-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:131) ~[spring-test-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:230) ~[spring-test-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:228) [spring-test-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:287) [spring-test-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:289) [spring-test-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:247) [spring-test-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94) [spring-test-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) [spring-test-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) [spring-test-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191) [spring-test-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:283) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:173) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:128) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203) [surefire-booter-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155) [surefire-booter-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103) [surefire-booter-2.18.1.jar:2.18.1]
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration': Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'javax.sql.DataSource' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:749) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:189) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1193) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1095) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:372) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1173) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1067) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1078) ~[spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:857) ~[spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543) ~[spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693) ~[spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360) ~[spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) ~[spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:120) ~[spring-boot-test-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:98) ~[spring-test-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:116) ~[spring-test-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	... 26 common frames omitted
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'javax.sql.DataSource' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1493) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1104) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:835) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:741) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	... 53 common frames omitted
+
+2017-11-05 00:10:44.585  INFO 53562 --- [main] ingDataAccessDemoProjectApplicationTests : Starting SpringDataAccessDemoProjectApplicationTests on NISUMs-MacBook-Pro.local with PID 53562 (started by nisum in /Users/nisum/Documents/Project files/Oct 18th/springboot-mongorepository-project)
+2017-11-05 00:10:44.587  INFO 53562 --- [main] ingDataAccessDemoProjectApplicationTests : No active profile set, falling back to default profiles: default
+2017-11-05 00:10:44.614  INFO 53562 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@3bf9ce3e: startup date [Sun Nov 05 00:10:44 IST 2017]; root of context hierarchy
+2017-11-05 00:10:45.029  INFO 53562 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-11-05 00:10:45.038 DEBUG 53562 --- [main] o.s.d.r.c.RepositoryComponentProvider    : Identified candidate component class: file [/Users/nisum/Documents/Project files/Oct 18th/springboot-mongorepository-project/target/classes/com/nisum/demo/dao/CustomerFinder.class]
+2017-11-05 00:10:45.050 DEBUG 53562 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Spring Data MongoDB - Registering repository: customerFinder - Interface: com.nisum.demo.dao.CustomerFinder - Factory: org.springframework.data.mongodb.repository.support.MongoRepositoryFactoryBean
+2017-11-05 00:10:45.381  WARN 53562 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration': Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'javax.sql.DataSource' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2017-11-05 00:10:45.387  INFO 53562 --- [main] utoConfigurationReportLoggingInitializer : 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2017-11-05 00:10:45.451 ERROR 53562 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration required a bean of type 'javax.sql.DataSource' that could not be found.
+	- Bean method 'dataSource' not loaded because @ConditionalOnProperty (spring.datasource.jndi-name) did not find property 'jndi-name'
+	- Bean method 'dataSource' not loaded because @ConditionalOnBean (types: org.springframework.boot.jta.XADataSourceWrapper; SearchStrategy: all) did not find any beans
+
+
+Action:
+
+Consider revisiting the conditions above or defining a bean of type 'javax.sql.DataSource' in your configuration.
+
+2017-11-05 00:10:45.456 ERROR 53562 --- [main] o.s.test.context.TestContextManager      : Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@400cff1a] to prepare test instance [com.nisum.demo.SpringDataAccessDemoProjectApplicationTests@22d6cac2]
+
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124) ~[spring-test-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:83) ~[spring-test-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:189) ~[spring-test-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:131) ~[spring-test-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:230) ~[spring-test-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:228) [spring-test-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:287) [spring-test-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:289) [spring-test-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:247) [spring-test-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94) [spring-test-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) [spring-test-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) [spring-test-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191) [spring-test-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:283) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:173) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:128) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203) [surefire-booter-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155) [surefire-booter-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103) [surefire-booter-2.18.1.jar:2.18.1]
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration': Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'javax.sql.DataSource' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:749) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:189) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1193) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1095) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:372) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1173) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1067) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1078) ~[spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:857) ~[spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543) ~[spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693) ~[spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360) ~[spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) ~[spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:120) ~[spring-boot-test-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:98) ~[spring-test-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:116) ~[spring-test-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	... 26 common frames omitted
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'javax.sql.DataSource' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1493) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1104) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:835) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:741) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	... 53 common frames omitted
+
+2017-11-05 00:11:54.967  INFO 53609 --- [main] d.SpringDataAccessDemoProjectApplication : Starting SpringDataAccessDemoProjectApplication on NISUMs-MacBook-Pro.local with PID 53609 (started by nisum in /Users/nisum/Documents/Project files/Oct 18th/springboot-mongorepository-project)
+2017-11-05 00:11:54.970  INFO 53609 --- [main] d.SpringDataAccessDemoProjectApplication : No active profile set, falling back to default profiles: default
+2017-11-05 00:11:54.999  INFO 53609 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2aece37d: startup date [Sun Nov 05 00:11:54 IST 2017]; root of context hierarchy
+2017-11-05 00:11:55.312  INFO 53609 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-11-05 00:11:55.317 DEBUG 53609 --- [main] o.s.d.r.c.RepositoryComponentProvider    : Identified candidate component class: file [/Users/nisum/Documents/Project files/Oct 18th/springboot-mongorepository-project/target/classes/com/nisum/demo/dao/CustomerFinder.class]
+2017-11-05 00:11:55.328 DEBUG 53609 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Spring Data MongoDB - Registering repository: customerFinder - Interface: com.nisum.demo.dao.CustomerFinder - Factory: org.springframework.data.mongodb.repository.support.MongoRepositoryFactoryBean
+2017-11-05 00:11:55.818  INFO 53609 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 9090 (http)
+2017-11-05 00:11:55.825  INFO 53609 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-11-05 00:11:55.826  INFO 53609 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.20
+2017-11-05 00:11:55.958  INFO 53609 --- [localhost-startStop-1] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2017-11-05 00:11:55.961  INFO 53609 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-11-05 00:11:55.961  INFO 53609 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 964 ms
+2017-11-05 00:11:56.047  INFO 53609 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-11-05 00:11:56.050  INFO 53609 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-11-05 00:11:56.051  INFO 53609 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-11-05 00:11:56.051  INFO 53609 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-11-05 00:11:56.051  INFO 53609 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-11-05 00:11:56.067  WARN 53609 --- [main] ationConfigEmbeddedWebApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration': Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'javax.sql.DataSource' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2017-11-05 00:11:56.069  INFO 53609 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2017-11-05 00:11:56.079  INFO 53609 --- [main] utoConfigurationReportLoggingInitializer : 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2017-11-05 00:11:56.126 ERROR 53609 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration required a bean of type 'javax.sql.DataSource' that could not be found.
+	- Bean method 'dataSource' not loaded because @ConditionalOnProperty (spring.datasource.jndi-name) did not find property 'jndi-name'
+	- Bean method 'dataSource' not loaded because @ConditionalOnBean (types: org.springframework.boot.jta.XADataSourceWrapper; SearchStrategy: all) did not find any beans
+
+
+Action:
+
+Consider revisiting the conditions above or defining a bean of type 'javax.sql.DataSource' in your configuration.
+
+2017-11-05 00:12:46.095  INFO 53642 --- [main] d.SpringDataAccessDemoProjectApplication : Starting SpringDataAccessDemoProjectApplication on NISUMs-MacBook-Pro.local with PID 53642 (started by nisum in /Users/nisum/Documents/Project files/Oct 18th/springboot-mongorepository-project)
+2017-11-05 00:12:46.098  INFO 53642 --- [main] d.SpringDataAccessDemoProjectApplication : No active profile set, falling back to default profiles: default
+2017-11-05 00:12:46.127  INFO 53642 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2aece37d: startup date [Sun Nov 05 00:12:46 IST 2017]; root of context hierarchy
+2017-11-05 00:12:46.458  INFO 53642 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-11-05 00:12:46.465 DEBUG 53642 --- [main] o.s.d.r.c.RepositoryComponentProvider    : Identified candidate component class: file [/Users/nisum/Documents/Project files/Oct 18th/springboot-mongorepository-project/target/classes/com/nisum/demo/dao/CustomerFinder.class]
+2017-11-05 00:12:46.473  INFO 53642 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.nisum.demo.dao.CustomerFinder.
+2017-11-05 00:12:46.498  INFO 53642 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-11-05 00:12:46.501 DEBUG 53642 --- [main] o.s.d.r.c.RepositoryComponentProvider    : Identified candidate component class: file [/Users/nisum/Documents/Project files/Oct 18th/springboot-mongorepository-project/target/classes/com/nisum/demo/dao/CustomerFinder.class]
+2017-11-05 00:12:46.505 DEBUG 53642 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Spring Data MongoDB - Registering repository: customerFinder - Interface: com.nisum.demo.dao.CustomerFinder - Factory: org.springframework.data.mongodb.repository.support.MongoRepositoryFactoryBean
+2017-11-05 00:12:47.020  INFO 53642 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 9090 (http)
+2017-11-05 00:12:47.026  INFO 53642 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-11-05 00:12:47.027  INFO 53642 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.20
+2017-11-05 00:12:47.160  INFO 53642 --- [localhost-startStop-1] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2017-11-05 00:12:47.163  INFO 53642 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-11-05 00:12:47.164  INFO 53642 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1040 ms
+2017-11-05 00:12:47.252  INFO 53642 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-11-05 00:12:47.255  INFO 53642 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-11-05 00:12:47.255  INFO 53642 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-11-05 00:12:47.255  INFO 53642 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-11-05 00:12:47.255  INFO 53642 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-11-05 00:12:47.287  WARN 53642 --- [main] ationConfigEmbeddedWebApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration': Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Tomcat.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.tomcat.jdbc.pool.DataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Cannot determine embedded database driver class for database type NONE. If you want an embedded database please put a supported one on the classpath. If you have database settings to be loaded from a particular profile you may need to active it (no profiles are currently active).
+2017-11-05 00:12:47.288  INFO 53642 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2017-11-05 00:12:47.301  INFO 53642 --- [main] utoConfigurationReportLoggingInitializer : 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2017-11-05 00:12:47.305 ERROR 53642 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Cannot determine embedded database driver class for database type NONE
+
+Action:
+
+If you want an embedded database please put a supported one on the classpath. If you have database settings to be loaded from a particular profile you may need to active it (no profiles are currently active).
+
+2017-11-05 00:15:37.743  INFO 53762 --- [main] d.SpringDataAccessDemoProjectApplication : Starting SpringDataAccessDemoProjectApplication on NISUMs-MacBook-Pro.local with PID 53762 (started by nisum in /Users/nisum/Documents/Project files/Oct 18th/springboot-mongorepository-project)
+2017-11-05 00:15:37.746  INFO 53762 --- [main] d.SpringDataAccessDemoProjectApplication : No active profile set, falling back to default profiles: default
+2017-11-05 00:15:37.774  INFO 53762 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@667a738: startup date [Sun Nov 05 00:15:37 IST 2017]; root of context hierarchy
+2017-11-05 00:15:38.059 DEBUG 53762 --- [main] o.s.d.r.c.RepositoryComponentProvider    : Identified candidate component class: file [/Users/nisum/Documents/Project files/Oct 18th/springboot-mongorepository-project/target/classes/com/nisum/demo/dao/CustomerFinder.class]
+2017-11-05 00:15:38.064 DEBUG 53762 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Spring Data MongoDB - Registering repository: customerFinder - Interface: com.nisum.demo.dao.CustomerFinder - Factory: org.springframework.data.mongodb.repository.support.MongoRepositoryFactoryBean
+2017-11-05 00:15:38.472  INFO 53762 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 9090 (http)
+2017-11-05 00:15:38.479  INFO 53762 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-11-05 00:15:38.480  INFO 53762 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.20
+2017-11-05 00:15:38.589  INFO 53762 --- [localhost-startStop-1] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2017-11-05 00:15:38.592  INFO 53762 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-11-05 00:15:38.593  INFO 53762 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 820 ms
+2017-11-05 00:15:38.687  INFO 53762 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-11-05 00:15:38.690  INFO 53762 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-11-05 00:15:38.690  INFO 53762 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-11-05 00:15:38.690  INFO 53762 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-11-05 00:15:38.690  INFO 53762 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-11-05 00:15:43.873  INFO 53762 --- [main] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2017-11-05 00:15:43.874  INFO 53762 --- [main] org.mongodb.driver.cluster               : Adding discovered server localhost:27017 to client view of cluster
+2017-11-05 00:15:43.939  INFO 53762 --- [cluster-ClusterId{value='59fe0ad77d0e93d2022d0010', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:119}] to localhost:27017
+2017-11-05 00:15:43.941  INFO 53762 --- [cluster-ClusterId{value='59fe0ad77d0e93d2022d0010', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 4, 9]}, minWireVersion=0, maxWireVersion=5, maxDocumentSize=16777216, roundTripTimeNanos=536910}
+2017-11-05 00:15:43.942  INFO 53762 --- [cluster-ClusterId{value='59fe0ad77d0e93d2022d0010', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Discovered cluster type of STANDALONE
+2017-11-05 00:15:43.977 DEBUG 53762 --- [main] .m.c.i.MongoPersistentEntityIndexCreator : Analyzing class class com.nisum.demo.domain.Customer for index information.
+2017-11-05 00:15:44.190  INFO 53762 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@667a738: startup date [Sun Nov 05 00:15:37 IST 2017]; root of context hierarchy
+2017-11-05 00:15:44.225  INFO 53762 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/],methods=[GET]}" onto public java.lang.String com.nisum.demo.controller.CustomerController.getHome()
+2017-11-05 00:15:44.227  INFO 53762 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/addCustomer],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.nisum.demo.controller.CustomerController.addCustomer(com.nisum.demo.domain.Customer)
+2017-11-05 00:15:44.227  INFO 53762 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/addCustomerForm],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.nisum.demo.controller.CustomerController.addCustomerForm()
+2017-11-05 00:15:44.228  INFO 53762 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/updateCustomerForm],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.nisum.demo.controller.CustomerController.updateCustomerForm(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-11-05 00:15:44.228  INFO 53762 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/updateCustomer],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.nisum.demo.controller.CustomerController.updateCustomer(com.nisum.demo.domain.Customer)
+2017-11-05 00:15:44.228  INFO 53762 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getCustomers],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.nisum.demo.controller.CustomerController.getCustomers()
+2017-11-05 00:15:44.228  INFO 53762 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/deleteCustomer],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.nisum.demo.controller.CustomerController.deleteCustomer(long)
+2017-11-05 00:15:44.230  INFO 53762 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-11-05 00:15:44.230  INFO 53762 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-11-05 00:15:44.251  INFO 53762 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-05 00:15:44.251  INFO 53762 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-05 00:15:44.274  INFO 53762 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-05 00:15:44.403  INFO 53762 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-11-05 00:15:44.447  INFO 53762 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 9090 (http)
+2017-11-05 00:15:44.451  INFO 53762 --- [main] d.SpringDataAccessDemoProjectApplication : Started SpringDataAccessDemoProjectApplication in 16.868 seconds (JVM running for 22.247)
+2017-11-05 00:16:06.844  INFO 53762 --- [http-nio-9090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-11-05 00:16:06.844  INFO 53762 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2017-11-05 00:16:06.853  INFO 53762 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 9 ms
+2017-11-05 00:16:08.983 DEBUG 53762 --- [http-nio-9090-exec-3] o.s.data.mongodb.core.MongoTemplate      : find using query: { } fields: null for class: class com.nisum.demo.domain.Customer in collection: mongo_customer
+2017-11-05 00:16:08.984 DEBUG 53762 --- [http-nio-9090-exec-3] o.s.data.mongodb.core.MongoDbUtils       : Getting Mongo Database name=[testdb]
+2017-11-05 00:16:08.998  INFO 53762 --- [http-nio-9090-exec-3] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:2, serverValue:120}] to localhost:27017
+2017-11-05 00:16:20.494 DEBUG 53762 --- [http-nio-9090-exec-6] o.s.data.mongodb.core.MongoTemplate      : Saving DBObject containing fields: [_class, _id, firstName, lastName]
+2017-11-05 00:16:20.494 DEBUG 53762 --- [http-nio-9090-exec-6] o.s.data.mongodb.core.MongoDbUtils       : Getting Mongo Database name=[testdb]
+2017-11-05 00:16:25.824 DEBUG 53762 --- [http-nio-9090-exec-8] o.s.data.mongodb.core.MongoTemplate      : find using query: { } fields: null for class: class com.nisum.demo.domain.Customer in collection: mongo_customer
+2017-11-05 00:16:25.824 DEBUG 53762 --- [http-nio-9090-exec-8] o.s.data.mongodb.core.MongoDbUtils       : Getting Mongo Database name=[testdb]
+2017-11-05 00:16:40.152 DEBUG 53762 --- [http-nio-9090-exec-1] o.s.data.mongodb.core.MongoTemplate      : Saving DBObject containing fields: [_class, _id, firstName, lastName]
+2017-11-05 00:16:40.152 DEBUG 53762 --- [http-nio-9090-exec-1] o.s.data.mongodb.core.MongoDbUtils       : Getting Mongo Database name=[testdb]
+2017-11-05 00:16:43.553 DEBUG 53762 --- [http-nio-9090-exec-3] o.s.data.mongodb.core.MongoTemplate      : find using query: { } fields: null for class: class com.nisum.demo.domain.Customer in collection: mongo_customer
+2017-11-05 00:16:43.554 DEBUG 53762 --- [http-nio-9090-exec-3] o.s.data.mongodb.core.MongoDbUtils       : Getting Mongo Database name=[testdb]
+2017-11-05 00:16:53.034 DEBUG 53762 --- [http-nio-9090-exec-5] o.s.data.mongodb.core.MongoTemplate      : Saving DBObject containing fields: [_class, _id, firstName, lastName]
+2017-11-05 00:16:53.035 DEBUG 53762 --- [http-nio-9090-exec-5] o.s.data.mongodb.core.MongoDbUtils       : Getting Mongo Database name=[testdb]
+2017-11-05 00:16:56.420 DEBUG 53762 --- [http-nio-9090-exec-7] o.s.data.mongodb.core.MongoTemplate      : find using query: { } fields: null for class: class com.nisum.demo.domain.Customer in collection: mongo_customer
+2017-11-05 00:16:56.420 DEBUG 53762 --- [http-nio-9090-exec-7] o.s.data.mongodb.core.MongoDbUtils       : Getting Mongo Database name=[testdb]
+2017-11-05 00:16:58.069 DEBUG 53762 --- [http-nio-9090-exec-8] o.s.data.mongodb.core.MongoDbUtils       : Getting Mongo Database name=[testdb]
+2017-11-05 00:16:58.074 DEBUG 53762 --- [http-nio-9090-exec-8] o.s.data.mongodb.core.MongoTemplate      : Remove using query: { "_id" : 67} in collection: mongo_customer.
+2017-11-05 00:16:58.077 DEBUG 53762 --- [http-nio-9090-exec-8] o.s.data.mongodb.core.MongoTemplate      : find using query: { } fields: null for class: class com.nisum.demo.domain.Customer in collection: mongo_customer
+2017-11-05 00:16:58.077 DEBUG 53762 --- [http-nio-9090-exec-8] o.s.data.mongodb.core.MongoDbUtils       : Getting Mongo Database name=[testdb]
+2017-11-05 00:17:01.366 DEBUG 53762 --- [http-nio-9090-exec-10] o.s.data.mongodb.core.MongoTemplate      : find using query: { } fields: null for class: class com.nisum.demo.domain.Customer in collection: mongo_customer
+2017-11-05 00:17:01.366 DEBUG 53762 --- [http-nio-9090-exec-10] o.s.data.mongodb.core.MongoDbUtils       : Getting Mongo Database name=[testdb]
+2017-11-05 00:17:14.379 DEBUG 53762 --- [http-nio-9090-exec-2] o.s.data.mongodb.core.MongoTemplate      : Saving DBObject containing fields: [_class, _id, firstName, lastName]
+2017-11-05 00:17:14.379 DEBUG 53762 --- [http-nio-9090-exec-2] o.s.data.mongodb.core.MongoDbUtils       : Getting Mongo Database name=[testdb]
+2017-11-05 00:17:16.719 DEBUG 53762 --- [http-nio-9090-exec-4] o.s.data.mongodb.core.MongoTemplate      : find using query: { } fields: null for class: class com.nisum.demo.domain.Customer in collection: mongo_customer
+2017-11-05 00:17:16.719 DEBUG 53762 --- [http-nio-9090-exec-4] o.s.data.mongodb.core.MongoDbUtils       : Getting Mongo Database name=[testdb]
+2017-11-05 18:48:13.300  INFO 53762 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2017-11-05 18:48:13.302  INFO 53762 --- [RMI TCP Connection(2)-127.0.0.1] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@667a738: startup date [Sun Nov 05 00:15:37 IST 2017]; root of context hierarchy
+2017-11-05 18:48:13.315  INFO 53762 --- [RMI TCP Connection(2)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2017-11-05 18:48:13.320  INFO 53762 --- [RMI TCP Connection(2)-127.0.0.1] org.mongodb.driver.connection            : Closed connection [connectionId{localValue:2, serverValue:120}] to localhost:27017 because the pool has been closed.
+2017-11-05 19:44:11.784  INFO 64993 --- [main] d.SpringDataAccessDemoProjectApplication : Starting SpringDataAccessDemoProjectApplication on NISUMs-MacBook-Pro.local with PID 64993 (started by nisum in /Users/nisum/Documents/Project files/Oct 18th/springboot-mongorepository-project)
+2017-11-05 19:44:11.788  INFO 64993 --- [main] d.SpringDataAccessDemoProjectApplication : No active profile set, falling back to default profiles: default
+2017-11-05 19:44:11.817  INFO 64993 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@667a738: startup date [Sun Nov 05 19:44:11 IST 2017]; root of context hierarchy
+2017-11-05 19:44:12.104 DEBUG 64993 --- [main] o.s.d.r.c.RepositoryComponentProvider    : Identified candidate component class: file [/Users/nisum/Documents/Project files/Oct 18th/springboot-mongorepository-project/target/classes/com/nisum/demo/dao/CustomerFinder.class]
+2017-11-05 19:44:12.108 DEBUG 64993 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Spring Data MongoDB - Registering repository: customerFinder - Interface: com.nisum.demo.dao.CustomerFinder - Factory: org.springframework.data.mongodb.repository.support.MongoRepositoryFactoryBean
+2017-11-05 19:44:12.525  INFO 64993 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 9090 (http)
+2017-11-05 19:44:12.531  INFO 64993 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-11-05 19:44:12.532  INFO 64993 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.20
+2017-11-05 19:44:12.644  INFO 64993 --- [localhost-startStop-1] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2017-11-05 19:44:12.647  INFO 64993 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-11-05 19:44:12.647  INFO 64993 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 832 ms
+2017-11-05 19:44:12.735  INFO 64993 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-11-05 19:44:12.738  INFO 64993 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-11-05 19:44:12.738  INFO 64993 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-11-05 19:44:12.739  INFO 64993 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-11-05 19:44:12.739  INFO 64993 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-11-05 19:44:17.982  INFO 64993 --- [main] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2017-11-05 19:44:17.983  INFO 64993 --- [main] org.mongodb.driver.cluster               : Adding discovered server localhost:27017 to client view of cluster
+2017-11-05 19:44:18.109 DEBUG 64993 --- [main] .m.c.i.MongoPersistentEntityIndexCreator : Analyzing class class com.nisum.demo.domain.Customer for index information.
+2017-11-05 19:44:18.142  INFO 64993 --- [cluster-ClusterId{value='59ff1cb97d0e93fde1234741', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:121}] to localhost:27017
+2017-11-05 19:44:18.144  INFO 64993 --- [cluster-ClusterId{value='59ff1cb97d0e93fde1234741', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 4, 9]}, minWireVersion=0, maxWireVersion=5, maxDocumentSize=16777216, roundTripTimeNanos=481708}
+2017-11-05 19:44:18.145  INFO 64993 --- [cluster-ClusterId{value='59ff1cb97d0e93fde1234741', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Discovered cluster type of STANDALONE
+2017-11-05 19:44:18.349  INFO 64993 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@667a738: startup date [Sun Nov 05 19:44:11 IST 2017]; root of context hierarchy
+2017-11-05 19:44:18.383  INFO 64993 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/],methods=[GET]}" onto public java.lang.String com.nisum.demo.controller.CustomerController.getHome()
+2017-11-05 19:44:18.384  INFO 64993 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/addCustomer],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.nisum.demo.controller.CustomerController.addCustomer(com.nisum.demo.domain.Customer)
+2017-11-05 19:44:18.385  INFO 64993 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/addCustomerForm],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.nisum.demo.controller.CustomerController.addCustomerForm()
+2017-11-05 19:44:18.385  INFO 64993 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/updateCustomerForm],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.nisum.demo.controller.CustomerController.updateCustomerForm(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-11-05 19:44:18.385  INFO 64993 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/updateCustomer],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.nisum.demo.controller.CustomerController.updateCustomer(com.nisum.demo.domain.Customer)
+2017-11-05 19:44:18.385  INFO 64993 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getCustomers],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.nisum.demo.controller.CustomerController.getCustomers()
+2017-11-05 19:44:18.385  INFO 64993 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/deleteCustomer],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.nisum.demo.controller.CustomerController.deleteCustomer(long)
+2017-11-05 19:44:18.387  INFO 64993 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-11-05 19:44:18.387  INFO 64993 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-11-05 19:44:18.408  INFO 64993 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-05 19:44:18.408  INFO 64993 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-05 19:44:18.432  INFO 64993 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-05 19:44:18.555  INFO 64993 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-11-05 19:44:18.600  INFO 64993 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 9090 (http)
+2017-11-05 19:44:18.603  INFO 64993 --- [main] d.SpringDataAccessDemoProjectApplication : Started SpringDataAccessDemoProjectApplication in 16.98 seconds (JVM running for 22.358)
+2017-11-05 19:44:22.865  INFO 64993 --- [http-nio-9090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-11-05 19:44:22.865  INFO 64993 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2017-11-05 19:44:22.874  INFO 64993 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 8 ms
+2017-11-05 19:44:27.922 DEBUG 64993 --- [http-nio-9090-exec-5] o.s.data.mongodb.core.MongoTemplate      : find using query: { } fields: null for class: class com.nisum.demo.domain.Customer in collection: mongo_customer
+2017-11-05 19:44:27.923 DEBUG 64993 --- [http-nio-9090-exec-5] o.s.data.mongodb.core.MongoDbUtils       : Getting Mongo Database name=[testdb]
+2017-11-05 19:44:27.937  INFO 64993 --- [http-nio-9090-exec-5] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:2, serverValue:122}] to localhost:27017
+2017-11-05 19:44:33.443 DEBUG 64993 --- [http-nio-9090-exec-9] o.s.data.mongodb.core.MongoTemplate      : Saving DBObject containing fields: [_class, _id, firstName, lastName]
+2017-11-05 19:44:33.443 DEBUG 64993 --- [http-nio-9090-exec-9] o.s.data.mongodb.core.MongoDbUtils       : Getting Mongo Database name=[testdb]
+2017-11-05 19:44:50.516 DEBUG 64993 --- [http-nio-9090-exec-2] o.s.data.mongodb.core.MongoTemplate      : Saving DBObject containing fields: [_class, _id, firstName, lastName]
+2017-11-05 19:44:50.516 DEBUG 64993 --- [http-nio-9090-exec-2] o.s.data.mongodb.core.MongoDbUtils       : Getting Mongo Database name=[testdb]
+2017-11-05 19:44:54.462 DEBUG 64993 --- [http-nio-9090-exec-4] o.s.data.mongodb.core.MongoTemplate      : find using query: { } fields: null for class: class com.nisum.demo.domain.Customer in collection: mongo_customer
+2017-11-05 19:44:54.462 DEBUG 64993 --- [http-nio-9090-exec-4] o.s.data.mongodb.core.MongoDbUtils       : Getting Mongo Database name=[testdb]
+2017-11-05 19:45:02.253 DEBUG 64993 --- [http-nio-9090-exec-6] o.s.data.mongodb.core.MongoTemplate      : Saving DBObject containing fields: [_class, _id, firstName, lastName]
+2017-11-05 19:45:02.253 DEBUG 64993 --- [http-nio-9090-exec-6] o.s.data.mongodb.core.MongoDbUtils       : Getting Mongo Database name=[testdb]
+2017-11-05 19:45:05.151 DEBUG 64993 --- [http-nio-9090-exec-8] o.s.data.mongodb.core.MongoTemplate      : find using query: { } fields: null for class: class com.nisum.demo.domain.Customer in collection: mongo_customer
+2017-11-05 19:45:05.151 DEBUG 64993 --- [http-nio-9090-exec-8] o.s.data.mongodb.core.MongoDbUtils       : Getting Mongo Database name=[testdb]
+2017-11-05 19:45:07.922 DEBUG 64993 --- [http-nio-9090-exec-9] o.s.data.mongodb.core.MongoDbUtils       : Getting Mongo Database name=[testdb]
+2017-11-05 19:45:07.925 DEBUG 64993 --- [http-nio-9090-exec-9] o.s.data.mongodb.core.MongoTemplate      : Remove using query: { "_id" : 76} in collection: mongo_customer.
+2017-11-05 19:45:07.929 DEBUG 64993 --- [http-nio-9090-exec-9] o.s.data.mongodb.core.MongoTemplate      : find using query: { } fields: null for class: class com.nisum.demo.domain.Customer in collection: mongo_customer
+2017-11-05 19:45:07.929 DEBUG 64993 --- [http-nio-9090-exec-9] o.s.data.mongodb.core.MongoDbUtils       : Getting Mongo Database name=[testdb]
+2017-11-06 00:33:25.961  INFO 64993 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2017-11-06 00:33:25.965  INFO 64993 --- [RMI TCP Connection(2)-127.0.0.1] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@667a738: startup date [Sun Nov 05 19:44:11 IST 2017]; root of context hierarchy
+2017-11-06 00:33:25.977  INFO 64993 --- [RMI TCP Connection(2)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2017-11-06 00:33:25.982  INFO 64993 --- [RMI TCP Connection(2)-127.0.0.1] org.mongodb.driver.connection            : Closed connection [connectionId{localValue:2, serverValue:122}] to localhost:27017 because the pool has been closed.
+2017-11-06 00:35:26.723  INFO 66967 --- [main] d.SpringDataAccessDemoProjectApplication : Starting SpringDataAccessDemoProjectApplication on NISUMs-MBP with PID 66967 (started by nisum in /Users/nisum/Documents/Project files/Oct 18th/springboot-mongorepository-project)
+2017-11-06 00:35:26.725  INFO 66967 --- [main] d.SpringDataAccessDemoProjectApplication : No active profile set, falling back to default profiles: default
+2017-11-06 00:35:26.754  INFO 66967 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@667a738: startup date [Mon Nov 06 00:35:26 IST 2017]; root of context hierarchy
+2017-11-06 00:35:27.066 DEBUG 66967 --- [main] o.s.d.r.c.RepositoryComponentProvider    : Identified candidate component class: file [/Users/nisum/Documents/Project files/Oct 18th/springboot-mongorepository-project/target/classes/com/nisum/demo/dao/CustomerFinder.class]
+2017-11-06 00:35:27.070 DEBUG 66967 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Spring Data MongoDB - Registering repository: customerFinder - Interface: com.nisum.demo.dao.CustomerFinder - Factory: org.springframework.data.mongodb.repository.support.MongoRepositoryFactoryBean
+2017-11-06 00:35:27.488  INFO 66967 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 9090 (http)
+2017-11-06 00:35:27.494  INFO 66967 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-11-06 00:35:27.495  INFO 66967 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.20
+2017-11-06 00:35:27.612  INFO 66967 --- [localhost-startStop-1] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2017-11-06 00:35:27.615  INFO 66967 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-11-06 00:35:27.615  INFO 66967 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 863 ms
+2017-11-06 00:35:27.692  INFO 66967 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-11-06 00:35:27.696  INFO 66967 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-11-06 00:35:27.696  INFO 66967 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-11-06 00:35:27.696  INFO 66967 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-11-06 00:35:27.696  INFO 66967 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-11-06 00:35:27.950  INFO 66967 --- [main] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2017-11-06 00:35:27.950  INFO 66967 --- [main] org.mongodb.driver.cluster               : Adding discovered server localhost:27017 to client view of cluster
+2017-11-06 00:35:28.084 DEBUG 66967 --- [main] .m.c.i.MongoPersistentEntityIndexCreator : Analyzing class class com.nisum.demo.domain.Customer for index information.
+2017-11-06 00:35:28.118  INFO 66967 --- [cluster-ClusterId{value='59ff60f77d0e930597dfb16b', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:123}] to localhost:27017
+2017-11-06 00:35:28.120  INFO 66967 --- [cluster-ClusterId{value='59ff60f77d0e930597dfb16b', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 4, 9]}, minWireVersion=0, maxWireVersion=5, maxDocumentSize=16777216, roundTripTimeNanos=527689}
+2017-11-06 00:35:28.120  INFO 66967 --- [cluster-ClusterId{value='59ff60f77d0e930597dfb16b', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Discovered cluster type of STANDALONE
+2017-11-06 00:35:28.337  INFO 66967 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@667a738: startup date [Mon Nov 06 00:35:26 IST 2017]; root of context hierarchy
+2017-11-06 00:35:28.367  INFO 66967 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/],methods=[GET]}" onto public java.lang.String com.nisum.demo.controller.CustomerController.getHome()
+2017-11-06 00:35:28.368  INFO 66967 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/addCustomer],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.nisum.demo.controller.CustomerController.addCustomer(com.nisum.demo.domain.Customer)
+2017-11-06 00:35:28.368  INFO 66967 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/addCustomerForm],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.nisum.demo.controller.CustomerController.addCustomerForm()
+2017-11-06 00:35:28.368  INFO 66967 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/updateCustomerForm],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.nisum.demo.controller.CustomerController.updateCustomerForm(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-11-06 00:35:28.369  INFO 66967 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/updateCustomer],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.nisum.demo.controller.CustomerController.updateCustomer(com.nisum.demo.domain.Customer)
+2017-11-06 00:35:28.369  INFO 66967 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getCustomers],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.nisum.demo.controller.CustomerController.getCustomers()
+2017-11-06 00:35:28.369  INFO 66967 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/deleteCustomer],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.nisum.demo.controller.CustomerController.deleteCustomer(long)
+2017-11-06 00:35:28.371  INFO 66967 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-11-06 00:35:28.371  INFO 66967 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-11-06 00:35:28.388  INFO 66967 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-06 00:35:28.388  INFO 66967 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-06 00:35:28.408  INFO 66967 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-06 00:35:28.506  INFO 66967 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-11-06 00:35:28.549  INFO 66967 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 9090 (http)
+2017-11-06 00:35:28.552  INFO 66967 --- [main] d.SpringDataAccessDemoProjectApplication : Started SpringDataAccessDemoProjectApplication in 1.985 seconds (JVM running for 2.372)
+2017-11-06 00:35:35.831  INFO 66967 --- [http-nio-9090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-11-06 00:35:35.831  INFO 66967 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2017-11-06 00:35:35.841  INFO 66967 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 10 ms
+2017-11-06 00:35:39.273 DEBUG 66967 --- [http-nio-9090-exec-2] o.s.data.mongodb.core.MongoTemplate      : find using query: { } fields: null for class: class com.nisum.demo.domain.Customer in collection: mongo_customer
+2017-11-06 00:35:39.274 DEBUG 66967 --- [http-nio-9090-exec-2] o.s.data.mongodb.core.MongoDbUtils       : Getting Mongo Database name=[testdb]
+2017-11-06 00:35:39.288  INFO 66967 --- [http-nio-9090-exec-2] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:2, serverValue:124}] to localhost:27017
+2017-11-06 00:35:52.349 DEBUG 66967 --- [http-nio-9090-exec-5] o.s.data.mongodb.core.MongoTemplate      : Saving DBObject containing fields: [_class, _id, firstName, lastName]
+2017-11-06 00:35:52.349 DEBUG 66967 --- [http-nio-9090-exec-5] o.s.data.mongodb.core.MongoDbUtils       : Getting Mongo Database name=[testdb]
+2017-11-06 00:35:55.269 DEBUG 66967 --- [http-nio-9090-exec-7] o.s.data.mongodb.core.MongoTemplate      : find using query: { } fields: null for class: class com.nisum.demo.domain.Customer in collection: mongo_customer
+2017-11-06 00:35:55.269 DEBUG 66967 --- [http-nio-9090-exec-7] o.s.data.mongodb.core.MongoDbUtils       : Getting Mongo Database name=[testdb]
+2017-11-06 00:36:04.829 DEBUG 66967 --- [http-nio-9090-exec-9] o.s.data.mongodb.core.MongoTemplate      : Saving DBObject containing fields: [_class, _id, firstName, lastName]
+2017-11-06 00:36:04.830 DEBUG 66967 --- [http-nio-9090-exec-9] o.s.data.mongodb.core.MongoDbUtils       : Getting Mongo Database name=[testdb]
+2017-11-06 00:36:07.348 DEBUG 66967 --- [http-nio-9090-exec-1] o.s.data.mongodb.core.MongoTemplate      : find using query: { } fields: null for class: class com.nisum.demo.domain.Customer in collection: mongo_customer
+2017-11-06 00:36:07.349 DEBUG 66967 --- [http-nio-9090-exec-1] o.s.data.mongodb.core.MongoDbUtils       : Getting Mongo Database name=[testdb]
+2017-11-06 00:36:09.746 DEBUG 66967 --- [http-nio-9090-exec-2] o.s.data.mongodb.core.MongoDbUtils       : Getting Mongo Database name=[testdb]
+2017-11-06 00:36:09.749 DEBUG 66967 --- [http-nio-9090-exec-2] o.s.data.mongodb.core.MongoTemplate      : Remove using query: { "_id" : 56} in collection: mongo_customer.
+2017-11-06 00:36:09.761 DEBUG 66967 --- [http-nio-9090-exec-2] o.s.data.mongodb.core.MongoTemplate      : find using query: { } fields: null for class: class com.nisum.demo.domain.Customer in collection: mongo_customer
+2017-11-06 00:36:09.761 DEBUG 66967 --- [http-nio-9090-exec-2] o.s.data.mongodb.core.MongoDbUtils       : Getting Mongo Database name=[testdb]
+2017-11-06 14:56:34.476  INFO 66967 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2017-11-06 14:56:34.480  INFO 66967 --- [RMI TCP Connection(2)-127.0.0.1] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@667a738: startup date [Mon Nov 06 00:35:26 IST 2017]; root of context hierarchy
+2017-11-06 14:56:34.492  INFO 66967 --- [RMI TCP Connection(2)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2017-11-06 14:56:34.498  INFO 66967 --- [RMI TCP Connection(2)-127.0.0.1] org.mongodb.driver.connection            : Closed connection [connectionId{localValue:2, serverValue:124}] to localhost:27017 because the pool has been closed.
+2017-11-06 14:59:20.823  INFO 78471 --- [main] d.SpringDataAccessDemoProjectApplication : Starting SpringDataAccessDemoProjectApplication on NISUMs-MacBook-Pro.local with PID 78471 (started by nisum in /Users/nisum/Documents/Project files/Oct 18th/springboot-mongorepository-project)
+2017-11-06 14:59:20.825  INFO 78471 --- [main] d.SpringDataAccessDemoProjectApplication : No active profile set, falling back to default profiles: default
+2017-11-06 14:59:20.853  INFO 78471 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@667a738: startup date [Mon Nov 06 14:59:20 IST 2017]; root of context hierarchy
+2017-11-06 14:59:21.169 DEBUG 78471 --- [main] o.s.d.r.c.RepositoryComponentProvider    : Identified candidate component class: file [/Users/nisum/Documents/Project files/Oct 18th/springboot-mongorepository-project/target/classes/com/nisum/demo/dao/CustomerFinder.class]
+2017-11-06 14:59:21.173 DEBUG 78471 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Spring Data MongoDB - Registering repository: customerFinder - Interface: com.nisum.demo.dao.CustomerFinder - Factory: org.springframework.data.mongodb.repository.support.MongoRepositoryFactoryBean
+2017-11-06 14:59:21.595  INFO 78471 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 9090 (http)
+2017-11-06 14:59:21.601  INFO 78471 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-11-06 14:59:21.602  INFO 78471 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.20
+2017-11-06 14:59:21.710  INFO 78471 --- [localhost-startStop-1] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2017-11-06 14:59:21.713  INFO 78471 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-11-06 14:59:21.713  INFO 78471 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 862 ms
+2017-11-06 14:59:21.789  INFO 78471 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-11-06 14:59:21.791  INFO 78471 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-11-06 14:59:21.791  INFO 78471 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-11-06 14:59:21.792  INFO 78471 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-11-06 14:59:21.792  INFO 78471 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-11-06 14:59:22.021  INFO 78471 --- [main] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2017-11-06 14:59:22.022  INFO 78471 --- [main] org.mongodb.driver.cluster               : Adding discovered server localhost:27017 to client view of cluster
+2017-11-06 14:59:22.157 DEBUG 78471 --- [main] .m.c.i.MongoPersistentEntityIndexCreator : Analyzing class class com.nisum.demo.domain.Customer for index information.
+2017-11-06 14:59:22.188  INFO 78471 --- [cluster-ClusterId{value='5a002b723d99de3287c361a2', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:127}] to localhost:27017
+2017-11-06 14:59:22.189  INFO 78471 --- [cluster-ClusterId{value='5a002b723d99de3287c361a2', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 4, 9]}, minWireVersion=0, maxWireVersion=5, maxDocumentSize=16777216, roundTripTimeNanos=528006}
+2017-11-06 14:59:22.190  INFO 78471 --- [cluster-ClusterId{value='5a002b723d99de3287c361a2', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Discovered cluster type of STANDALONE
+2017-11-06 14:59:22.422  INFO 78471 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@667a738: startup date [Mon Nov 06 14:59:20 IST 2017]; root of context hierarchy
+2017-11-06 14:59:22.454  INFO 78471 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/],methods=[GET]}" onto public java.lang.String com.nisum.demo.controller.CustomerController.getHome()
+2017-11-06 14:59:22.455  INFO 78471 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/addCustomer],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.nisum.demo.controller.CustomerController.addCustomer(com.nisum.demo.domain.Customer)
+2017-11-06 14:59:22.456  INFO 78471 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/addCustomerForm],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.nisum.demo.controller.CustomerController.addCustomerForm()
+2017-11-06 14:59:22.456  INFO 78471 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/updateCustomerForm],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.nisum.demo.controller.CustomerController.updateCustomerForm(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-11-06 14:59:22.456  INFO 78471 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/updateCustomer],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.nisum.demo.controller.CustomerController.updateCustomer(com.nisum.demo.domain.Customer)
+2017-11-06 14:59:22.456  INFO 78471 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getCustomers],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.nisum.demo.controller.CustomerController.getCustomers()
+2017-11-06 14:59:22.456  INFO 78471 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/deleteCustomer],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.nisum.demo.controller.CustomerController.deleteCustomer(long)
+2017-11-06 14:59:22.458  INFO 78471 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-11-06 14:59:22.458  INFO 78471 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-11-06 14:59:22.476  INFO 78471 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-06 14:59:22.476  INFO 78471 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-06 14:59:22.496  INFO 78471 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-06 14:59:22.591  INFO 78471 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-11-06 14:59:22.635  INFO 78471 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 9090 (http)
+2017-11-06 14:59:22.639  INFO 78471 --- [main] d.SpringDataAccessDemoProjectApplication : Started SpringDataAccessDemoProjectApplication in 1.971 seconds (JVM running for 2.35)
+2017-11-06 14:59:29.606  INFO 78471 --- [http-nio-9090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-11-06 14:59:29.607  INFO 78471 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2017-11-06 14:59:29.615  INFO 78471 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 8 ms
+2017-11-06 14:59:31.867 DEBUG 78471 --- [http-nio-9090-exec-2] o.s.data.mongodb.core.MongoTemplate      : find using query: { } fields: null for class: class com.nisum.demo.domain.Customer in collection: mongo_customer
+2017-11-06 14:59:31.868 DEBUG 78471 --- [http-nio-9090-exec-2] o.s.data.mongodb.core.MongoDbUtils       : Getting Mongo Database name=[testdb]
+2017-11-06 14:59:31.883  INFO 78471 --- [http-nio-9090-exec-2] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:2, serverValue:128}] to localhost:27017
+2017-11-06 14:59:40.002 DEBUG 78471 --- [http-nio-9090-exec-4] o.s.data.mongodb.core.MongoTemplate      : Saving DBObject containing fields: [_class, _id, firstName, lastName]
+2017-11-06 14:59:40.003 DEBUG 78471 --- [http-nio-9090-exec-4] o.s.data.mongodb.core.MongoDbUtils       : Getting Mongo Database name=[testdb]
+2017-11-06 14:59:43.395 DEBUG 78471 --- [http-nio-9090-exec-6] o.s.data.mongodb.core.MongoTemplate      : find using query: { } fields: null for class: class com.nisum.demo.domain.Customer in collection: mongo_customer
+2017-11-06 14:59:43.396 DEBUG 78471 --- [http-nio-9090-exec-6] o.s.data.mongodb.core.MongoDbUtils       : Getting Mongo Database name=[testdb]
+2017-11-06 15:00:00.702 DEBUG 78471 --- [http-nio-9090-exec-9] o.s.data.mongodb.core.MongoTemplate      : Saving DBObject containing fields: [_class, _id, firstName, lastName]
+2017-11-06 15:00:00.702 DEBUG 78471 --- [http-nio-9090-exec-9] o.s.data.mongodb.core.MongoDbUtils       : Getting Mongo Database name=[testdb]
+2017-11-06 15:00:03.094 DEBUG 78471 --- [http-nio-9090-exec-1] o.s.data.mongodb.core.MongoTemplate      : find using query: { } fields: null for class: class com.nisum.demo.domain.Customer in collection: mongo_customer
+2017-11-06 15:00:03.094 DEBUG 78471 --- [http-nio-9090-exec-1] o.s.data.mongodb.core.MongoDbUtils       : Getting Mongo Database name=[testdb]
+2017-11-06 15:00:09.693 DEBUG 78471 --- [http-nio-9090-exec-3] o.s.data.mongodb.core.MongoTemplate      : Saving DBObject containing fields: [_class, _id, firstName, lastName]
+2017-11-06 15:00:09.693 DEBUG 78471 --- [http-nio-9090-exec-3] o.s.data.mongodb.core.MongoDbUtils       : Getting Mongo Database name=[testdb]
+2017-11-06 15:00:13.158 DEBUG 78471 --- [http-nio-9090-exec-5] o.s.data.mongodb.core.MongoTemplate      : find using query: { } fields: null for class: class com.nisum.demo.domain.Customer in collection: mongo_customer
+2017-11-06 15:00:13.158 DEBUG 78471 --- [http-nio-9090-exec-5] o.s.data.mongodb.core.MongoDbUtils       : Getting Mongo Database name=[testdb]
+2017-11-06 15:00:19.249  INFO 78471 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2017-11-06 15:00:19.249  INFO 78471 --- [RMI TCP Connection(2)-127.0.0.1] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@667a738: startup date [Mon Nov 06 14:59:20 IST 2017]; root of context hierarchy
+2017-11-06 15:00:19.251  INFO 78471 --- [RMI TCP Connection(2)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2017-11-06 15:00:19.252  INFO 78471 --- [RMI TCP Connection(2)-127.0.0.1] org.mongodb.driver.connection            : Closed connection [connectionId{localValue:2, serverValue:128}] to localhost:27017 because the pool has been closed.
